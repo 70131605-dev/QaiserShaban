@@ -101,7 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         {site.showLoader && <Loader />}
         {/* Page-wide grain, kept below everything interactive. */}
-        <div aria-hidden className="noise pointer-events-none fixed inset-0 z-[1] opacity-[0.035] mix-blend-overlay" />
+        <div aria-hidden className="noise pointer-events-none fixed inset-0 z-[1] opacity-[0.035] mix-blend-overlay print:hidden" />
         <Providers>
           <Navbar />
           <main id="main" tabIndex={-1} className="relative z-[2] outline-none">

@@ -13,7 +13,7 @@ const socials = [
 
 export function Footer() {
   return (
-    <footer className="relative z-[2] mt-10">
+    <footer className="relative z-[2] mt-10 print:hidden">
       <div className="divider-glow" />
       <div className="container-x py-12">
         <div className="grid items-center gap-8 md:grid-cols-3">

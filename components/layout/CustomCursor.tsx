@@ -58,7 +58,7 @@ export function CustomCursor() {
   const ring = { default: 34, link: 52, project: 96 }[mode];
 
   return (
-    <div aria-hidden className="pointer-events-none fixed inset-0 z-[90]" style={{ opacity: visible ? 1 : 0 }}>
+    <div aria-hidden className="pointer-events-none fixed inset-0 z-[90] print:hidden" style={{ opacity: visible ? 1 : 0 }}>
       <motion.div
         className={cn(
           "absolute left-0 top-0 grid place-items-center rounded-full border transition-colors duration-300",

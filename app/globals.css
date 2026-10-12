@@ -537,3 +537,22 @@ html.theme-switching *::after {
   animation: none;
   mix-blend-mode: normal;
 }
+
+/* Resume PDF: exact A4, no browser margins, keep backgrounds. */
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html,
+  body {
+    background: #fff !important;
+  }
+  .page-in {
+    animation: none !important;
+  }
+  .resume-sheet {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

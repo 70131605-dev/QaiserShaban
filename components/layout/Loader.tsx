@@ -8,7 +8,7 @@ export function Loader() {
   return (
     <div
       aria-hidden
-      className="loader pointer-events-none fixed inset-0 z-[100] grid place-items-center bg-bg"
+      className="loader pointer-events-none fixed inset-0 z-[100] grid place-items-center bg-bg print:hidden"
     >
       <div className="flex flex-col items-center gap-5">
         <span className="loader-mark text-[44px] font-semibold tracking-[-0.04em] text-fg">

@@ -26,7 +26,7 @@ export function FloatingActions() {
   }, []);
 
   return (
-    <div className="pointer-events-none fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3 sm:bottom-6 sm:right-6">
+    <div className="pointer-events-none fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3 sm:bottom-6 sm:right-6 print:hidden">
       {/* WhatsApp */}
       <motion.a
         href={whatsappLink}
